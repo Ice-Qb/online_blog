@@ -13,6 +13,9 @@ gem 'puma'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
 end
 
 group :development do
@@ -21,8 +24,9 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers', require: false
+  gem 'faker'
 end
 
 gem 'rails_12factor', group: :production
