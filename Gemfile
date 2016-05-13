@@ -13,6 +13,7 @@ gem 'puma'
 gem 'acts_as_tree'
 gem 'will_paginate', '~> 3.0.5'
 gem 'acts-as-taggable-on', '~> 3.4'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
