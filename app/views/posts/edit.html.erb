@@ -1,6 +1,7 @@
 <h1>Editing Post</h1>
 
+<p>
 <%= render 'form' %>
-
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
+</p>
+<%= link_to 'Show', @post, class: 'btn-large waves-effect waves-light red' %>
+<%= link_to 'Back', posts_path, class: 'btn-large waves-effect waves-light blue' %>

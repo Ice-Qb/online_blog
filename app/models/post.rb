@@ -1,6 +1,8 @@
 class Post < ActiveRecord::Base
   belongs_to :category
+
   acts_as_taggable
+  resourcify
 
   validates :category, presence: true
   validates :title, presence: true

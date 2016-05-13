@@ -14,6 +14,9 @@ gem 'acts_as_tree'
 gem 'will_paginate', '~> 3.0.5'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'devise'
+gem 'materialize-sass'
+gem 'cancancan'
+gem 'rolify'
 
 group :development, :test do
   gem 'byebug'

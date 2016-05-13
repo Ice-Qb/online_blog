@@ -1,15 +1,11 @@
-<p id="notice"><%= notice %></p>
+<h3 class="title center"><%= @post.title %></h3>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
+<p class="post-body">
   <%= @post.body %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<% if user_signed_in? && current_user.admin? %>
+  <%= link_to 'Edit', edit_post_path(@post), class: 'btn-large waves-effect waves-light red' %>
+<% end %>
+<%= link_to 'Back', posts_path, class: 'btn-large waves-effect waves-light blue' %>
 <%= render 'disqus' %>
