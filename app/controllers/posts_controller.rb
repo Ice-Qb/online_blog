@@ -8,7 +8,7 @@ class PostsController < ApplicationController
       tagged_with(params[:tag]).
       search(params[:search]).
       order('updated_at desc').
-      paginate(page: params[:page], per_page: 10)
+      paginate(page: params[:page], per_page: 5)
   end
 
   def show
