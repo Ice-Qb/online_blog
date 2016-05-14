@@ -17,6 +17,7 @@ gem 'devise'
 gem 'materialize-sass'
 gem 'cancancan'
 gem 'rolify'
+gem 'faker', '~> 1.6'
 
 group :development, :test do
   gem 'byebug'
@@ -33,7 +34,6 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers', require: false
-  gem 'faker'
 end
 
 gem 'rails_12factor', group: :production
